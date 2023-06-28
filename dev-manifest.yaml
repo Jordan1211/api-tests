@@ -1,19 +1,19 @@
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: brent-api 
+  name: jordan-api 
 spec:
   replicas: 1 
   selector:
     matchLabels:
-      app: brent-api 
+      app: jordan-api 
   template: 
     metadata:
       labels:
-        app: brent-api 
+        app: jordan-api 
     spec:
       containers:
-        - name: brent-api
+        - name: jordan-api
           # This image is going to be the path to the image you create in a future step
           image: us-docker.pkg.dev/cit262-team-01/jordan-api/api-tests 
           ports:
